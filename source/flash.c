@@ -404,6 +404,11 @@ IWRAM_CODE u8 BootGame(ItemConfig config, FlashStatus status)
 	REG_DISPCNT = 0x0080;
 	REG_BLDCNT = 0;
 	REG_BLDY = 0;
+	REG_DMA0CNT = 0; 
+	REG_DMA1CNT = 0; 
+	REG_DMA2CNT = 0; 
+	REG_DMA3CNT = 0;
+	REG_IF = 0xFFFF;
 
 	// VRAM (96 KB), palette (1 KB), OAM (1 KB)
 	for (int i = 0; i < 0x18000 >> 2; i++)
